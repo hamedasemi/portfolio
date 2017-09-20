@@ -6,6 +6,7 @@ env:
 before_install:
   - echo "before_install"
 install:
+  - npm install
   - npm install --global firebase-tools
   - npm install --global @angular/cli
 before_script:
