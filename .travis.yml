@@ -10,6 +10,6 @@ install:
 before_script:
   - echo "before_script"
 script:
-  - echo "script"
+  - ng build
 after_success:
   - firebase deploy --project "hamed-portfolio" --token "$FIREBASE_TOKEN" --only "hosting" --debug
