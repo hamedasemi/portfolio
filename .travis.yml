@@ -7,8 +7,9 @@ before_install:
   - echo "before_install"
 install:
   - npm install --global firebase-tools
-before_script:
   - npm install --global @angular/cli
+before_script:
+  - echo 'before_script'
 script:
   - ng build
 after_success:
